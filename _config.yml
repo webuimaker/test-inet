@@ -12,6 +12,9 @@ google_analytics:
 twitter:
   username: ct_inet
   card: summary #keep this to generate a twitter share card
+gems:
+jekyll-scholar
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -55,6 +58,7 @@ scholar:
   details_link:   Details
 
   query: "@*"
+
 
   # Sections on the "people" page.
 roles:
