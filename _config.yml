@@ -15,7 +15,7 @@ twitter:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll/scholar
+  - jekyll-scholar
 scholar:
   style: _bibliography/bibStyle.csl
   locale: en
