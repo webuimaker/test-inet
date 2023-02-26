@@ -13,7 +13,7 @@ twitter:
   username: ct_inet
   card: summary #keep this to generate a twitter share card
 gems:
-jekyll-scholar
+  - jekyll-scholar
 
 plugins:
   - jekyll-seo-tag
