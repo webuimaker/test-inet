@@ -6,8 +6,8 @@ description: INET
 # description: >- # this means to ignore newlines until "baseurl:"
 #  Bio
 author: INET
-url: https://inet-tub.github.io # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+# url: https://inet-tub.github.io # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
 google_analytics:
 twitter:
   username: ct_inet
