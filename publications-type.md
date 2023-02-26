@@ -9,5 +9,6 @@ Grouped by type: [here](publications-type) ; Grouped by date: [here](publication
 
 {% for item in site.data.bibdata.types %}
 ## {{item.name}}
+{% bibliography --query @*[group={{item.tag}}] %}
 {: reversed="reversed"}
 {% endfor %}
