@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="INET, INET group, Algorithms,self adjusting networks,tcp,online,topologies,reconfigurable,communication,technology,berlin,germany,phd,doctoral,student,researcher,computer,science,papers,publications,algorithms,networks,networking">
+{% seo %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+<!--     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}"> -->
+    <!-- <link rel="stylesheet" href="{{ "/assets/css/bootstrap/bootstrap-black-red.css" | relative_url }}"> -->
+    <link rel="stylesheet" href="{{ 'assets/css/bootstrap/bootstrap.css' | relative_url }}">
+    <!-- <link rel="stylesheet" href="{{ "/assets/css/bootstrap/bootstrap-icons.css" | relative_url }}"> -->
+    <style>
+      body { padding-top: 70px; }
+    </style>
+    
+    {% include head-custom.html %}
+    
+  </head>
+    {% include navbar.html %}
+  <body>
+     <div class="container">
+      {{ content }}
+      </div>
+      {% include footer.html %}
+  </body>
+
+</html>

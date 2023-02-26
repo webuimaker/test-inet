@@ -1,0 +1,98 @@
+- name: Stefan Schmid
+  role: head
+  photo: /images/members/stefan.jpeg
+  info: Professor
+  email: stefan.schmid@tub
+  phone: "+49 30 314 75169"
+  scholar: https://scholar.google.com/citations?hl=en&user=o3Mh4FwAAAAJ
+  website: https://www.univie.ac.at/ct/stefan/
+  link: https://schmiste.github.io/
+
+- name: Birgit Hohmeier-Touré
+  role: admin
+  photo: /images/members/noimage.png
+  info: Secretary
+  email: birgit@inet
+  phone: +49 30 314 75170
+
+- name: Vamsi Addanki
+  role: researchteaching
+  photo: /images/members/vamsi.jpeg
+  info: PhD Student
+  email: vamsi@inet
+  github: https://github.com/vamsiDT
+  scholar: https://scholar.google.com/citations?user=aWDx0zUAAAAJ&hl=en
+  website: https://www.vamsiaddanki.net/
+  link: https://www.vamsiaddanki.net/
+
+- name: Arash Pourdamghani
+  role: researchteaching
+  photo: /images/members/arash.jpeg
+  info: PhD Student
+  email: pourdamghani@tub
+  github: https://github.com/pourdamghani
+  scholar: https://scholar.google.com/citations?hl=en&user=jsHuvKEAAAAJ
+  website: https://pourdamghani.github.io/
+  link: https://pourdamghani.net/
+
+- name: Maciej Pacut
+  role: researchteaching
+  photo: /images/members/maciej.jpeg
+  info: Postdoc
+  email: maciej@inet
+  github: https://github.com/foo
+  scholar: https://scholar.google.pl/citations?user=KE9MLF8AAAAJ&hl=en
+  website: https://maciejpacut.github.io/
+  link: https://maciej.pacut.pl/
+
+- name: Volker Stocker
+  role: researchteaching
+  photo: /images/members/noimage.png
+  info: Postdoc
+  email: vstocker@inet
+  link: https://volkerstocker.net/
+
+- name: Darya Melnyk
+  role: researchteaching
+  photo: /images/members/noimage.png
+  info: Postdoc
+  email: darya.melnyk@aalto
+  scholar: https://scholar.google.com/citations?user=i88PJrIAAAAJ&hl=en
+  link: https://darya-melnyk.github.io/
+
+- name: Taha Albakour
+  role: researchteaching
+  photo: /images/members/noimage.png
+  info: PhD Student
+  email: taha.albakour@inet
+
+- name: Susanna Schwarzmann
+  role: researchteaching
+  photo: /images/members/noimage.png
+  info: PhD Student
+  email: susanna@inet
+
+- name: Habib Mostafaei
+  role: researchteaching
+  photo: /images/members/noimage.png
+  info: Postdoc
+  email: habib@inet
+
+- name: Anjuman Ara Bithi
+  role: studentassistants
+  photo: /images/members/noimage.png
+  email: a.bithi@tub
+
+- name: Sarah Dierenfeld
+  role: sysadmin
+  photo: /images/members/noimage.png
+  info: System Administrator
+  email: sarah@inet
+  phone: +49 30 314 75171, 75734
+
+- name: Rainer May
+  role: sysadmin
+  photo: /images/members/noimage.png
+  info: System Administrator
+  email: "rainer@inet, admins@inet"
+  phone: +49 30 314 75171

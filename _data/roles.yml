@@ -1,0 +1,14 @@
+- role: head
+  roletitle: Head
+
+- role: admin
+  roletitle: Administrative Assistants
+
+- role: researchteaching
+  roletitle: Researchers / PhD Students / Postdocs
+
+- role: studentassistants
+  roletitle: Student Assistants
+
+- role: sysadmin
+  roletitle: System Administrators

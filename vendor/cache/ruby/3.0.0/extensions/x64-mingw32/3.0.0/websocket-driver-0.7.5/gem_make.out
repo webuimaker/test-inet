@@ -1,0 +1,16 @@
+current directory: D:/2023/test-website/test-website/vendor/cache/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+C:/Ruby30-x64/bin/ruby.exe -I C:/Ruby30-x64/lib/ruby/3.0.0 -r ./siteconf20230224-25100-ez2yh6.rb extconf.rb
+creating Makefile
+
+current directory: D:/2023/test-website/test-website/vendor/cache/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= clean
+
+current directory: D:/2023/test-website/test-website/vendor/cache/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\=
+generating websocket_mask-x64-mingw32.def
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: D:/2023/test-website/test-website/vendor/cache/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20230224-25100-wf3k5x

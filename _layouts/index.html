@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="INET">
+    <meta name="keywords" content="INET, INET group, Algorithms,self adjusting networks,tcp,online,topologies,reconfigurable,communication,technology,berlin,germany,phd,doctoral,student,researcher,computer,science,papers,publications,algorithms,networks,networking">
+{% seo %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <!-- <link rel="stylesheet" href="{{ "/assets/css/bootstrap/bootstrap-black-red.css" | relative_url }}"> -->
+    <link rel="stylesheet" href="{{ "/assets/css/bootstrap/bootstrap.css" | relative_url }}">
+    <style>
+    /*<link rel="stylesheet" href="{{ "/assets/css/bootstrap/bootstrap-icons.css" | relative_url }}">*/
+      body { padding-top: 70px; }
+    </style>
+  {% include head-custom.html %}
+</head>
+
+  <body>
+      {% include navbar.html %}
+    <div class="container">
+    <div class="wrapper">
+      <header>
+          <img  src="images/inet-logo.png" style="width:150px; border-radius: 10%;" alt="Logo"/> <br>
+          <h3>Intelligent Networks</h3>
+          TU Berlin,<br>
+          FG INET/ EN 18,<br>
+          Einsteinufer 17,<br>
+          10587 Berlin,<br>
+          Phone: +49 30 314 75170,<br>
+          Fax: +49 30 314 78550<br>
+
+      </header>
+      
+      <section>
+      {{ content }}
+      </section>
+      <header style="padding-left: 50px; float: right;">
+      {% include twitter-timeline.html %}
+      </header>
+      {% include footer.html %}
+    </div>
+  </div>
+  </body>
+
+</html>

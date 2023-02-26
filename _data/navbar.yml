@@ -1,0 +1,30 @@
+#_data/navbar.yml
+
+- name: People
+  link: people.html
+
+- name: Research
+  link: research
+
+- name: Publications
+  drop:
+    - name: All
+      link: publications-all
+      breakline: break
+    - name: By date
+      link: publications-date
+    - name: By type
+      link: publications-type
+
+- name: Courses
+  link: courses
+
+- name: Theses
+  link: theses
+
+- name: Jobs
+  link: https://www.jobs.tu-berlin.de/stellenausschreibungen
+
+- name: Contact
+  link: contact
+# Remember: Use max 6 tabs. More tabs doesn't look well in small window sizes, some css problem.

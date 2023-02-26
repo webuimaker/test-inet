@@ -1,0 +1,68 @@
+################### Used for Grouping by Year ###################
+years:
+  - tag: 2022
+    name: 2022
+
+  - tag: 2021
+    name: 2021
+
+  - tag: 2020
+    name: 2020
+
+  - tag: 2018
+    name: 2018
+
+  - tag: 2017
+    name: 2017
+
+  - tag: 2016
+    name: 2016
+
+  - tag: 2015
+    name: 2015
+
+  - tag: 2014
+    name: 2014
+  
+  - tag: 2013
+    name: 2013
+  
+  - tag: 2012
+    name: 2012
+  
+  - tag: 2011
+    name: 2011
+  
+  - tag: 2010
+    name: 2010
+  
+  - tag: 2009
+    name: 2009
+  
+  - tag: 2008
+    name: 2008
+  
+  - tag: 2006
+    name: 2006
+  
+  - tag: 2005
+    name: 2005
+  
+  - tag: 2004
+    name: 2004
+################### Used for Grouping by Type ###################
+types:
+  - tag: journal
+    name: Journal Articles
+
+  - tag: conference_workshop
+    name: Conference or Workshop Proceedings
+
+  - tag: techreport_arxiv
+    name: Tech Reports
+
+  - tag: poster
+    name: Posters or Demos
+  
+  - tag: thesis
+    name: Theses

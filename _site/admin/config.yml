@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: master
+  identity_url: "http://127.0.0.1:4000/.netlify/identity"
+  gateway_url: "http://127.0.0.1:4000/.netlify/git"
+  squash_merges: true
+
+publish_mode: editorial_workflow
+media_folder: "assets/img/uploads"
+
+site_url: http://127.0.0.1:4000
+logo_url: http://127.0.0.1:4000/images/TU_Logo_kurz_rot_Screen/TU_Logo_kurz_RGB_rot.jpg
+
+collections:  
+ - name: "news"    
+   label: "News and Events"    
+   folder: "_news/"    
+   create: true # Allow users to create new documents  
+   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+   editor:      
+    preview: true    
+   fields: # The fields for each document, usually in front matter         
+    - { label: "Layout", name: "layout", widget: "hidden", default: "post" }      
+    - { label: "Title", name: "title", widget: "string" }      
+    - { label: "Publish Date", name: "date", widget: "datetime" }      
+    - { label: "Author", name: "author", widget: "relation", collection: "authors", displayFields: [display_name], searchFields: [display_name], valueField: "name", }      
+    - { label: "Body", name: "body", widget: "markdown" }

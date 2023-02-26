@@ -1,0 +1,164 @@
+---
+---
+
+<p>
+{% if entry.tag %}
+<span class="badge bg-primary">{{entry.tag}}</span> 
+{% endif %}
+
+{% if entry.award %}
+<span class="badge bg-success">{{entry.award}}</span> 
+{% endif %}
+
+{% if entry.status == "review" %}
+<span class="badge bg-warning">Under review</span> 
+{% endif %}
+
+{% if entry.status == "arxiv" %}
+<span class="badge bg-secondary">arXiv</span> 
+{% endif %}
+
+{% if entry.type == "thesis" %}
+<span class="badge bg-dark">{{entry.thesis}}</span> 
+{% endif %}
+
+<strong>{{entry.title}}</strong><br />
+{% if entry.author %}
+{{reference}}<br />
+{% endif %}
+
+{% if entry.status == "review" %}
+(Under Review)<br />
+{% endif %}
+
+{% if entry.type == "article" %}
+{% if entry.journal %}
+{{entry.journal}},
+{% endif %}
+{% if entry.location %}
+{{entry.location}},
+{% endif %}
+{% if entry.month %}
+{{entry.month}},
+{% endif %}
+{% if entry.year %}
+{{entry.year}}.
+{% endif %}
+{% endif %}
+
+
+{% if entry.type == "inproceedings" %}
+{% if entry.booktitle %}
+{{entry.booktitle}},
+{% endif %}
+{% if entry.location %}
+{{entry.location}},
+{% endif %}
+{% if entry.month %}
+{{entry.month}},
+{% endif %}
+{% if entry.year %}
+{{entry.year}}.
+{% endif %}
+{% endif %}
+
+{% if entry.type == "thesis" %}
+{% if entry.supervisors %}
+Supervisors: {{entry.supervisors}}
+{% endif %}<br>
+{% if entry.location %}
+{{entry.location}},
+{% endif %}
+{% if entry.month %}
+{{entry.month}},
+{% endif %}
+{% if entry.year %}
+{{entry.year}}.
+{% endif %}
+{% endif %}
+
+{% if entry.type == "techreport" %}
+{% if entry.journal %}
+{{entry.journal}},
+{% endif %}
+{% if entry.location %}
+{{entry.location}},
+{% endif %}
+{% if entry.month %}
+{{entry.month}},
+{% endif %}
+{% if entry.year %}
+{{entry.year}}.
+{% endif %}
+{% endif %}
+
+
+<br>
+{% if entry.paper %}
+<img src="images/icons/file-earmark-pdf.svg" alt="Bootstrap" width="20" height="20" /> <a href="{{entry.paper}}">Paper</a> 
+{% endif %}
+
+{% if entry.slides %}
+<img src="images/icons/file-earmark-slides.svg" fill="#000" alt="Bootstrap" width="20" height="20" /> <a href="{{entry.slides}}">Slides</a> 
+{% endif %}
+
+{% if entry.poster %}
+<img src="images/icons/file-earmark-pdf.svg" alt="Bootstrap" width="20" height="20" /> <a href="{{entry.poster}}">Poster</a> 
+{% endif %}
+
+{% if entry.video %}
+<img src="images/icons/camera-reels.svg" fill="#000" alt="Bootstrap" width="20" height="20" /> <a href="{{entry.video}}">Demo</a> 
+{% endif %}
+
+{% if entry.videocontd %}
+<img src="images/icons/camera-reels.svg" fill="#000" alt="Bootstrap" width="20" height="20" /> <a href="{{entry.videocontd}}">Demo-contd.</a> 
+{% endif %}
+
+{% if entry.code %}
+<img src="images/icons/github.svg" fill="#000" alt="Bootstrap" width="20" height="20" /> <a href="{{entry.code}}">Code</a> 
+{% endif %}
+
+{% if entry.website %}
+<img src="images/icons/camera-reels.svg" fill="#000" alt="Bootstrap" width="20" height="20" /> <a href="{{entry.website}}">Website</a> 
+{% endif %}
+
+
+{% if entry.abstract %}
+<img src="images/icons/chat-square-text.svg" fill="#000" alt="Bootstrap" width="20" height="20" />
+<a data-bs-toggle="collapse" href="#abstract{{ entry.key }}">
+    Abstract
+</a>
+<img src="images/icons/book.svg" fill="#000" alt="Bootstrap" width="20" height="20" /><a data-bs-toggle="collapse" href="#bibtex{{ entry.key }}">
+    BibTeX
+</a>
+<div class="collapse" id="abstract{{ entry.key }}">
+  	<div class="alert alert-dismissible alert-secondary">
+  		<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  		Click <a data-bs-toggle="collapse" href="#abstract{{ entry.key }}">here</a> to close the dropdown!
+	</div>
+  	{{entry.abstract}}
+</div>
+<div class="collapse" id="bibtex{{ entry.key }}">
+	<div class="alert alert-dismissible alert-secondary">
+  		<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  		Click <a data-bs-toggle="collapse" href="#bibtex{{ entry.key }}">here</a> to close the dropdown!
+	</div>
+  	<pre>{{entry.bibtex}}</pre>
+</div>
+{% endif %}
+
+{% unless entry.abstract %}
+<img src="images/icons/book.svg" fill="#000" alt="Bootstrap" width="20" height="20" /><a data-bs-toggle="collapse" href="#bibtex{{ entry.key }}">
+    BibTeX
+</a>
+<div class="collapse" id="bibtex{{ entry.key }}">
+	<div class="alert alert-dismissible alert-secondary">
+  		<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  		Click <a data-bs-toggle="collapse" href="#bibtex{{ entry.key }}">here</a> to close the dropdown!
+	</div>
+  	<pre>{{entry.bibtex}}</pre>
+</div>
+{% endunless %}
+
+</p>
+
