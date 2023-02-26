@@ -7,6 +7,6 @@ title: Publications (All)
 
 Grouped by type: [here](publications-type) ; Grouped by date: [here](publications-date); All: [here](publications-all)
 
-<!-- {% bibliography %} -->
+
 {: reversed="reversed"}
 
